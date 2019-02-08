@@ -3,18 +3,38 @@
     --text-color: #6e7381;
     --header-color: #1d2951;
     --link-hover: #9370db;
-  }
+    --default-margin: 0 20% 0 20%;
+}
 
-body{
+/* General */  
+body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     color: var(--text-color);
+    width: 100%;
+    margin: 0 0 0 0;
 }
+hr {
+    color: var(--text-color);
+    width: 100%;
+}
+
+/* Main Content */
+/* main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 320px 320px 1fr 1fr; 
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}  */
 
 /* Headers */
 
 header {
-    border-bottom: 1px solid var(--text-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: var(--default-margin);
 }
 
 h1,
@@ -22,50 +42,55 @@ h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
     color:var(--header-color);
 }
-main h1{
+main h1 {
     text-align: center;
 }
-main img{
+main img {
     width: 100%;
-    height: 50%;
+    height: 430px;
 }
 
 /* Navigation */
 
-nav{
+nav {
     list-style: none;
 }
-nav li{
+nav li {
     display: inline;
     margin-left: 1.5em;
 }
-nav li a{
+nav li a {
     text-decoration: none;
-    color: var(--text-color);
+    font-weight: 600;
+    color: var(--header-color);
 }
-nav li a:hover{
+nav li a:hover {
     color: var(--link-hover);
 }
 
 footer {
-    border-top: 1px solid var(--text-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: var(--default-margin);
 }
 
 /* Buttons */
-footer button{
+footer button {
     width: 24px;
     height: 24px;
     border: none;
 }
-#twitter{
+#twitter {
     background:url(../images/icons8-twitter-24.png) 0 0 no-repeat;
 }
-#facebook{
+#facebook {
     background:url(../images/icons8-facebook-24.png) 0 0 no-repeat;
 }
-#instagram{
+#instagram {
     background:url(../images/icons8-instagram-24.png) 0 0 no-repeat;
 }
