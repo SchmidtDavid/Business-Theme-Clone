@@ -1,16 +1,19 @@
 :root {
 /*     --main-bg-color: coral;  */
-    --text-color: #6e7381;
+    --text-color: #b2b4bd;
     --header-color: #1d2951;
-    --link-hover: #9370db;
-    --default-margin: 0 20% 0 20%;
+    --background-color: #fbfbff;
+    --link-hover: #9370DB;
+    --default-margin: 0 10% 0 10%;
 }
 
 /* General */  
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 400;
     color: var(--text-color);
+    background-color: var(--background-color);
     width: 100%;
     margin: 0 0 0 0;
 }
@@ -18,16 +21,10 @@ hr {
     color: var(--text-color);
     width: 100%;
 }
-
-/* Main Content */
-/* main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 320px 320px 1fr 1fr; 
-    grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
-}  */
-
-/* Headers */
+a {
+    text-decoration: none;
+    color: var(--header-color);
+}
 
 header {
     display: flex;
@@ -35,6 +32,7 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: var(--default-margin);
+    color:var(--background-color);
 }
 
 h1,
@@ -45,12 +43,40 @@ h5,
 h6 {
     color:var(--header-color);
 }
-main h1 {
-    text-align: center;
+.wrapper-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 320px 320px 1fr 1fr; 
+    grid-column-gap: 40px;
+    grid-row-gap: 10px;
+/*     background-color: #fff; */
+    color: #444;
 }
-main img {
+.wrapper-main > * {
+    grid-column: 3 / 5;
+}
+.wrapper-main img {
+    grid-column: 1 / 7;
     width: 100%;
-    height: 430px;
+    height: 400px;
+}
+
+.wrapper-2-col {
+    display: grid;
+    grid-template-columns: 320px 320px;
+    grid-column-gap: 40px;
+    grid-row-gap: 10px;
+/*     justify-content: space-between;
+    align-items: left; 
+    margin: 0 20% 0 0; */
+}
+.wrapper-2-col > * {
+    overflow-wrap: break-word;
+}
+
+address{
+    text-align: left;
+    margin: 16px 0 16px 0;
+    font-style: normal;
 }
 
 /* Navigation */
@@ -76,6 +102,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    color: var(--text-color);
     margin: var(--default-margin);
 }
 
@@ -85,6 +112,7 @@ footer button {
     height: 24px;
     border: none;
 }
+
 #twitter {
     background:url(../images/icons8-twitter-24.png) 0 0 no-repeat;
 }
