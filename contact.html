@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./styles/main.css">
+  <title>Business Template</title>
+</head>
+<body>
+  <header>
+    <h1 class="logo"><a href="./index.html">Business</a></h1>
+    <nav class="nav main-nav">
+      <ul>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./news.html">News</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+   <div class="wrapper-main">
+    <h1>Contact</h1>
+    <p>We would love to hear from you!</p>
+
+    <form>
+      <div class="entry">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="firstname" placeholder="John Doe">
+      </div>
+      <div class="entry">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="email@example.com">
+      </div>  
+      <div class="entry">
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something..."></textarea>
+      </div> 
+      <button class="btn-submit" type="btn-submit">Submit</button>
+    </form> 
+    <div class="empty row"><!-- To stop excessive auto-stretching --></div>   
+   </div>
+  </main>
+  <footer>
+    <p>fakewebsite.com</p>
+    <nav class="nav social-media">
+      <ul>
+        <li>
+          <button id="twitter" onclick="location.href='http://www.twitter.com'" type="button"></button>
+        </li>
+        <li>
+          <button id="facebook" onclick="location.href='http://www.facebook.com'" type="button"></button>
+        </li>
+        <li>
+          <button id="instagram" onclick="location.href='http://www.instagram.com'" type="button"></button>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>
