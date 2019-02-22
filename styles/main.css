@@ -412,7 +412,7 @@ body {
     color: var(--text-color);
     background-color: var(--background-color);
 }
-article {
+.layout {
     min-height: 100%;
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -582,5 +582,19 @@ footer button {
 .employee {
     display: flex;
     flex-direction: row;
+    margin-bottom: 20px;
 }
-
+.employee img {
+    height: 100px;
+    width: 100px;
+}
+.employee p {
+    padding: .75rem;
+    text-align: justify;
+/*     justify-content: center;
+    justify-self: center; */
+    margin: 0 0 0 0;
+}
+.employee p span {
+    font-size: .9rem;
+}
